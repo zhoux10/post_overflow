@@ -1,19 +1,29 @@
 source 'https://rubygems.org'
 
+ruby '2.1.5'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+group :development, :test do 
+  gem 'dotenv-rails'
+  gem 'rspec-rails'
+  gem 'awesome_print'
+end
+
+group :test do
+  gem 'selenium-webdriver'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+end
+
 gem 'rails', '4.1.8'
-# Use postgresql as the database for Active Record
 gem 'pg'
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# Use ActiveModel has_secure_password
+group :production do
+  gem 'rails_12factor'
+end
+
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
