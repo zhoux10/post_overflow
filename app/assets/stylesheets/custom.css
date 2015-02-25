@@ -1,0 +1,11 @@
+.jumbotron {
+  width: 70%;
+  margin: 0 auto;
+  height: 800px;
+  padding: 20px;
+}
+
+.jumbotron h1 {
+  font-size: 28px;
+  color: green;
+}
