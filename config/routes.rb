@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
   get 'welcome/data_binding' => 'welcome#data_binding'
+  get 'welcome/module_practice' => 'welcome#module_practice'
   get 'welcome/exercise_1' => 'welcome#exercise_1'
   get 'welcome/exercise_2' => 'welcome#exercise_2'
   get 'welcome/solution_1' => 'welcome#solution_1'

@@ -11,6 +11,9 @@ class WelcomeController < ApplicationController
   def data_binding
   end
 
+  def module_practice
+  end
+
   def solution_1
   end
 end

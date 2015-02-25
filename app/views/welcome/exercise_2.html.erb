@@ -1,0 +1,25 @@
+<div class="jumbotron" ng-app= ng-init="first_string='';second_string=''">
+  <header>
+    <h1>Exercise1: You will be practising two way data binding here.</h1>
+    <h2>Create an angular module named 
+  </header>
+  <div class="main-container">
+    <div class="row">
+      <h3>Problem: Create a Form that takes two strings and concatenates those two and outputs the result</h3>
+    </div>
+    <div class="form-group row">
+      <div class="col-xs-6">
+        <label for="first_string">First string</label>
+        <input type="text" class="form-control" id="first_string" ng-model="first_string">
+      </div>
+
+      <div class="col-xs-6">
+        <label for="second_string">Second string</label>
+        <input type="text" class="form-control" id="second_string" ng-model="second_string">
+      </div>
+    </div>
+    <div class="row">
+      <p>Concatenating {{first_string}} with {{second_string}} results in {{first_string.concat(second_string)}}</p>
+    </div>
+  </div>
+</div>
