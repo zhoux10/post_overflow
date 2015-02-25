@@ -9,3 +9,7 @@
   font-size: 28px;
   color: green;
 }
+
+.jumbotron .main-container {
+  padding: 10px;
+}

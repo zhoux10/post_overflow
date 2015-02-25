@@ -1,0 +1,38 @@
+<div class="jumbotron" ng-app ng-init="first_number=1;second_number=1">
+  <header>
+    <h1>Two Way Data Binding</h1>
+  </header>
+  <h2>A basic calculator</h2>
+  <div class="form-group row">
+    <div class="col-xs-6">
+      <label for="first_number">First Number</label>
+      <input type="number" class="form-control" id="first_number" ng-model="first_number">
+    </div>
+
+    <div class="col-xs-6">
+      <label for="second_number">Second Number</label>
+      <input type="number" class="form-control" id="second_number" ng-model="second_number">
+    </div>
+  </div>
+  
+  <h3>Calculator Operations</h3>
+  <div class="row">
+    <p>Adding {{first_number}} with {{second_number}} results in {{first_number + second_number}}</p>
+  </div>
+
+  <div class="row">
+    <p>Subtracting {{first_number}} with {{second_number}} results in {{first_number - second_number}}</p>
+  </div>
+
+  <div class="row">
+    <p>Multiplying {{first_number}} with {{second_number}} results in {{first_number * second_number}}</p>
+  </div>
+
+  <div class="row">
+    <p>Dividing {{first_number}} with {{second_number}} results in {{first_number / second_number}}</p>
+  </div>
+
+  <div class="row">
+    <p>Modulo Operation of {{first_number}} with {{second_number}} results in {{first_number % second_number}}</p>
+  </div>  
+</div>

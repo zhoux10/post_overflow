@@ -7,4 +7,10 @@ class WelcomeController < ApplicationController
 
   def exercise_2
   end
+
+  def data_binding
+  end
+
+  def solution_1
+  end
 end
