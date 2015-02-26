@@ -1,25 +1,17 @@
-<div class="jumbotron" ng-app= ng-init="first_string='';second_string=''">
+<div class="jumbotron">
   <header>
-    <h1>Exercise1: You will be practising two way data binding here.</h1>
-    <h2>Create an angular module named 
+    <h1>Exercise2: You will be practising creating modules and controllers</h1>
   </header>
   <div class="main-container">
     <div class="row">
-      <h3>Problem: Create a Form that takes two strings and concatenates those two and outputs the result</h3>
-    </div>
-    <div class="form-group row">
-      <div class="col-xs-6">
-        <label for="first_string">First string</label>
-        <input type="text" class="form-control" id="first_string" ng-model="first_string">
-      </div>
-
-      <div class="col-xs-6">
-        <label for="second_string">Second string</label>
-        <input type="text" class="form-control" id="second_string" ng-model="second_string">
-      </div>
-    </div>
-    <div class="row">
-      <p>Concatenating {{first_string}} with {{second_string}} results in {{first_string.concat(second_string)}}</p>
+      <h3>Convert the solution from Exercise 1 to a more modular code</h3>
+      <ul>
+        <li>create a file named student.js in the public/assets/js folder</li>
+        <li>create a module named 'hello'</li>
+        <li>add a controllers constructor function named 'StringGameController' to the module using the controller() method</li>
+        <li>Write the relevant code in the StringGameController to perform the concatenation and adjust the view accordingly</li>
+        <li>include the student.js file in exercise_2.html.erb</li> 
+      </ul>
     </div>
   </div>
 </div>
