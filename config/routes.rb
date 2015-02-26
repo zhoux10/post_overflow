@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'welcome/module_practice' => 'welcome#module_practice'
   get 'welcome/exercise_1' => 'welcome#exercise_1'
   get 'welcome/exercise_2' => 'welcome#exercise_2'
+  get 'welcome/exercise_3' => 'welcome#exercise_3'
   get 'welcome/solution_1' => 'welcome#solution_1'
 
   # Example of regular route:

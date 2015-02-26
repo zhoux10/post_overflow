@@ -3,6 +3,8 @@
   app.controller('CalculatorController',['$scope', function($scope) {
     $scope.firstNumber = 1;
     $scope.secondNumber = 1;
+    $scope.firstHidden = false;
+    $scope.buttonText = 'Hide Me';
 
     $scope.add = function() {
       return $scope.firstNumber + $scope.secondNumber;
@@ -22,6 +24,15 @@
 
     $scope.modulo = function() {
       return $scope.firstNumber % $scope.secondNumber;
+    }
+
+    $scope.hideFirst = function() {
+      $scope.firstHidden = !$scope.firstHidden
+      if ($scope.buttonText == 'Hide Me') {
+        $scope.buttonText = 'Show Me';
+      } else {
+        $scope.buttonText = 'Hide Me'
+      }
     }
   }]);
 

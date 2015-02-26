@@ -4,23 +4,26 @@
   </header>
   <h2>A basic calculator</h2>
   <div class="main-container" ng-controller="CalculatorController">
-    <div class="form-group row">
-      <div class="col-xs-6">
-        <label for="firstNumber">First Number</label>
-        <input type="number" class="form-control" id="firstNumber" ng-model="firstNumber">
-      </div>
+    <div ng-hide="firstHidden">
+      <div class="form-group row">
+        <div class="col-xs-6">
+          <label for="firstNumber">First Number</label>
+          <input type="number" class="form-control" id="firstNumber" ng-model="firstNumber">
+        </div>
 
-      <div class="col-xs-6">
-        <label for="secondNumber">Second Number</label>
-        <input type="number" class="form-control" id="secondNumber" ng-model="secondNumber">
+        <div class="col-xs-6">
+          <label for="secondNumber">Second Number</label>
+          <input type="number" class="form-control" id="secondNumber" ng-model="secondNumber">
+        </div>
       </div>
+      
+      <p>Adding {{firstNumber}} with {{secondNumber}} results in {{add()}}</p>
+      <p>Subtracting {{firstNumber}} with {{secondNumber}} results in {{subtract()}}</p>
+      <p>Multiplying {{firstNumber}} with {{secondNumber}} results in {{multiply()}}</p>
+      <p>Dividing {{firstNumber}} with {{secondNumber}} results in {{divide()}}</p>
+      <p>Modulo Operation of {{firstNumber}} with {{secondNumber}} results in {{modulo()}}</p>
     </div>
-    
-    <p>Adding {{firstNumber}} with {{secondNumber}} results in {{add()}}</p>
-    <p>Subtracting {{firstNumber}} with {{secondNumber}} results in {{subtract()}}</p>
-    <p>Multiplying {{firstNumber}} with {{secondNumber}} results in {{multiply()}}</p>
-    <p>Dividing {{firstNumber}} with {{secondNumber}} results in {{divide()}}</p>
-    <p>Modulo Operation of {{firstNumber}} with {{secondNumber}} results in {{modulo()}}</p>
+    <button ng-click="hideFirst()" class="btn btn-success">{{buttonText}}</button>
   </div>
 
   <h2>Alternate Calculator</h2>
