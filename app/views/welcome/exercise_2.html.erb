@@ -1,8 +1,8 @@
-<div class="jumbotron">
+<div class="jumbotron" ng-app='hello'>
   <header>
     <h1>Exercise2: You will be practising creating modules and controllers</h1>
   </header>
-  <div class="main-container">
+  <div class="main-container" ng-controller="stringGameController">
     <div class="row">
       <h3>Convert the solution from Exercise 1 to a more modular code</h3>
       <ul>
@@ -10,8 +10,28 @@
         <li>create a module named 'hello'</li>
         <li>add a controllers constructor function named 'StringGameController' to the module using the controller() method</li>
         <li>Write the relevant code in the StringGameController to perform the concatenation and adjust the view accordingly</li>
-        <li>include the student.js file in exercise_2.html.erb</li> 
+        <li>include the student.js file in exercise_2.html.erb</li>
       </ul>
     </div>
+    <div class="form-group row">
+      <div class="col-xs-6">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" ng-model="firstName" placeholder="First Name">
+      </div>
+
+      <div class="col-xs-6">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" ng-model="lastName"  placeholder="Last Name">
+      </div>
+    </div>
+
+    <h3>Name Parsed for {{firstName}}</h3>
+    <p>
+      For forms: {{lastName}}, {{firstName}}
+    </p>
+    <p>
+      For reading: {{firstName}} {{lastName}}
+    </p>
+  </div>
   </div>
 </div>

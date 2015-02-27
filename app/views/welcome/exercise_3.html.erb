@@ -1,10 +1,68 @@
-<div class="jumbotron">
+<div class="jumbotron" ng-app="hello">
   <header>
     <h1>Exercise2: You will be practising creating modules and controllers</h1>
   </header>
   <div class="main-container">
     <div class="row">
-      <h3>In module_practice.html.erb update the code such that the Alternate calculator can be hidden and shown as well</h3>   
+      <h3>In module_practice.html.erb update the code such that the Alternate calculator can be hidden and shown as well</h3>
+    </div>
+    <div class="main-container" ng-controller="stringGameController">
+      <div class="row">
+        <h3>Convert the solution from Exercise 1 to a more modular code</h3>
+        <ul>
+          <li>create a file named student.js in the public/assets/js folder</li>
+          <li>create a module named 'hello'</li>
+          <li>add a controllers constructor function named 'StringGameController' to the module using the controller() method</li>
+          <li>Write the relevant code in the StringGameController to perform the concatenation and adjust the view accordingly</li>
+          <li>include the student.js file in exercise_2.html.erb</li>
+        </ul>
+      </div>
+
+      <h1>Give us your name</h1>
+      <div ng-hide='firstHidden'>
+        <div class="form-group row">
+          <div class="col-xs-6">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" ng-model="firstName" placeholder="First Name">
+          </div>
+
+          <div class="col-xs-6">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" ng-model="lastName"  placeholder="Last Name">
+          </div>
+        </div>
+
+        <h3>Name Parsed for {{firstName}}</h3>
+        <p>
+          For forms: {{lastName}}, {{firstName}}
+        </p>
+        <p>
+          For reading: {{firstName}} {{lastName}}
+        </p>
+      </div>
+
+      <button ng-click="hideFirst()" class="btn btn-success" name="button">{{firstButtonText}}</button>
+    </div>
+
+    <h1>What course do you want?</h1>
+    <div class='main-container' ng-controller="stringGameControllerNew">
+      <div ng-hide='secondHidden'>
+        <div class="form-group row">
+          <div class="col-xs-6">
+            <label for="className">Class Name</label>
+            <input type="text" class="form-control" id="className" ng-model="className" placeholder="Class Name">
+          </div>
+
+          <div class="col-xs-6">
+            <label for="credits">Credits</label>
+            <input type="number" class="form-control" id="credits" ng-model="credits"  placeholder="Number of Credits">
+          </div>
+        </div>
+
+        <h3>{{className}} has {{credits}}</h3>
+      </div>
+
+      <button ng-click="hideSecond()" class="btn btn-success" name="button">{{secondButtonText}}</button>
     </div>
   </div>
 </div>
