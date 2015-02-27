@@ -1,7 +1,4 @@
 <div class="jumbotron" ng-app="hello">
-  <header>
-    <h1>Exercise2: You will be practising creating modules and controllers</h1>
-  </header>
   <div class="main-container">
     <div class="row">
       <h3>In module_practice.html.erb update the code such that the Alternate calculator can be hidden and shown as well</h3>
@@ -34,10 +31,10 @@
 
         <h3>Name Parsed for {{firstName}}</h3>
         <p>
-          For forms: {{lastName}}, {{firstName}}
+          For forms: {{forms()}}
         </p>
         <p>
-          For reading: {{firstName}} {{lastName}}
+          For reading: {{reading()}}
         </p>
       </div>
 
@@ -59,7 +56,7 @@
           </div>
         </div>
 
-        <h3>{{className}} has {{credits}}</h3>
+        <h3>{{classParse()}}</h3>
       </div>
 
       <button ng-click="hideSecond()" class="btn btn-success" name="button">{{secondButtonText}}</button>
