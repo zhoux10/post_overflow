@@ -23,27 +23,31 @@
       <p>Dividing {{firstNumber}} with {{secondNumber}} results in {{divide()}}</p>
       <p>Modulo Operation of {{firstNumber}} with {{secondNumber}} results in {{modulo()}}</p>
     </div>
-    <button ng-click="hideFirst()" class="btn btn-success">{{buttonText}}</button>
+    <button ng-click="hideFirst()" class="btn btn-success">{{firstButtonText}}</button>
   </div>
 
   <h2>Alternate Calculator</h2>
   <div class="main-container" ng-controller="AlternateCalculateController as calc">
-    <div class="form-group row">
-      <div class="col-xs-6">
-        <label for="firstNumber">First Number</label>
-        <input type="number" class="form-control" id="firstNumber" ng-model="calc.firstNumber">
+    <div ng-hide="secondHidden">
+      <div class="form-group row">
+        <div class="col-xs-6">
+          <label for="firstNumber">First Number</label>
+          <input type="number" class="form-control" id="firstNumber" ng-model="calc.firstNumber">
+        </div>
+
+        <div class="col-xs-6">
+          <label for="secondNumber">Second Number</label>
+          <input type="number" class="form-control" id="secondNumber" ng-model="calc.secondNumber">
+        </div>
       </div>
 
-      <div class="col-xs-6">
-        <label for="secondNumber">Second Number</label>
-        <input type="number" class="form-control" id="secondNumber" ng-model="calc.secondNumber">
-      </div>
+        <p>Adding {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.add()}}</p>
+        <p>Subtracting {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.subtract()}}</p>
+        <p>Multiplying {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.multiply()}}</p>
+        <p>Dividing {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.divide()}}</p>
+        <p>Modulo Operation of {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.modulo()}}</p>
     </div>
-
-      <p>Adding {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.add()}}</p>
-      <p>Subtracting {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.subtract()}}</p>
-      <p>Multiplying {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.multiply()}}</p>
-      <p>Dividing {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.divide()}}</p>
-      <p>Modulo Operation of {{calc.firstNumber}} with {{calc.secondNumber}} results in {{calc.modulo()}}</p>
+    <button ng-click="hideSecond()" class="btn btn-success">{{calc.secondButtonText}}</button>
   </div>
+
 </div>
