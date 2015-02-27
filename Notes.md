@@ -83,7 +83,7 @@
 #### Use them
 * set up initial state scope
 * add behavior to scope object
-#### DON't
+#### DON'T
 * put everything into controller. Don't use them to manipulate the DOM
 * format input
 * filter input
@@ -92,7 +92,11 @@
 ### Module (angular.module)
 * angular.module("sleepEarly", []) --- creates
 * angular.module("sleepEarly") --- retrieves existing moidule
+* include on page by including name in ng-app
+* iife-- immediately included functional elemnt -- all code is encapulated, not polluting normal space, code only executed once.
 * container for different parts of app -- inlcude controllers, services, filters, directives, package as reusable components
 * CONVENTION: Have module for each feature, and application level module which depends on above modules
 #### API
 * Factory, filter, controller, directive, config, run -- these are commonly used methods, used to confiugre anular modules
+
+* Personal choice is how to activate 2 modules on one page, either activate 2 DOMS, or use "as" for second instance. Allows 2 different controllers for 2 different scopes for 2 different DOMs

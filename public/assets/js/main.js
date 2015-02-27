@@ -17,7 +17,7 @@
     $scope.multiply = function() {
       return $scope.firstNumber * $scope.secondNumber;
     }
-   
+
     $scope.divide = function() {
       return $scope.firstNumber / $scope.secondNumber;
     }
@@ -51,7 +51,7 @@
     this.multiply = function() {
       return this.firstNumber * this.secondNumber;
     }
-   
+
     this.divide = function() {
       return this.firstNumber / this.secondNumber;
     }
@@ -59,5 +59,5 @@
     this.modulo = function() {
       return this.firstNumber % this.secondNumber;
     }
-  }); 
+  });
 })();
