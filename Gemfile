@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.1.5'
+ruby '2.2.0'
 
-group :development, :test do 
+group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'awesome_print'
@@ -34,4 +34,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
