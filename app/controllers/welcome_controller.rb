@@ -11,6 +11,9 @@ class WelcomeController < ApplicationController
   def exercise_3
   end
 
+  def exercise_4
+  end
+
   def data_binding
   end
 
