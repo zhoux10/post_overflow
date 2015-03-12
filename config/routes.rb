@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+  resources :categories
   get 'welcome/data_binding' => 'welcome#data_binding'
   get 'welcome/module_practice' => 'welcome#module_practice'
   get 'welcome/exercise_1' => 'welcome#exercise_1'
