@@ -17,6 +17,9 @@ class WelcomeController < ApplicationController
   def module_practice
   end
 
+  def services_intro
+  end
+
   def solution_1
   end
 end
