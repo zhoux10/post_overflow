@@ -1,12 +1,12 @@
-<div class='jumbotron' ng-app='category'>
+<div class="jumbotron" ng-app="question">
   <header>
     <h1>Post Overflow: Learning how to use services</h1>
   </header>
 
-  <section ng-controller='QuestionsController'>
+  <section ng-controller="QuestionController">
     Display the list of questions
     <ul>
-      <li ng-repeat='question in questionData.questions'></li>
+      <li ng-repeat="question in questionData.questions">{{question.description}}</li>
       <!-- ng-repeat iteration -->
     </ul>
   </section>

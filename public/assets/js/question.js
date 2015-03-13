@@ -1,6 +1,6 @@
 (function() {
-  var app = angular.module('category', ['categoryServiceModule']);
-  app.controller('CategoryController',['$scope', 'categoryService', function($scope, categoryData) {
-  $scope.categoryData = categoryData;
-  }]);
+  var app = angular.module('question', ['questionServiceModule']);
+  app.controller('QuestionController',['$scope', 'questionService', function($scope, questionData) {
+  $scope.questionData = questionData;
+}]);
 })();
