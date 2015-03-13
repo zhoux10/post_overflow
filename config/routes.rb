@@ -4,11 +4,14 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+  resources :categories, :questions
   get 'welcome/data_binding' => 'welcome#data_binding'
   get 'welcome/module_practice' => 'welcome#module_practice'
   get 'welcome/exercise_1' => 'welcome#exercise_1'
   get 'welcome/exercise_2' => 'welcome#exercise_2'
   get 'welcome/exercise_3' => 'welcome#exercise_3'
+  get 'welcome/exercise_4' => 'welcome#exercise_4'
+  get 'welcome/services_intro' => 'welcome#services_intro'
   get 'welcome/solution_1' => 'welcome#solution_1'
 
   # Example of regular route:
