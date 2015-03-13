@@ -100,3 +100,24 @@
 * Factory, filter, controller, directive, config, run -- these are commonly used methods, used to confiugre anular modules
 
 * Personal choice is how to activate 2 modules on one page, either activate 2 DOMS, or use "as" for second instance. Allows 2 different controllers for 2 different scopes for 2 different DOMs
+
+NOTES FROM ANGULAR Day 2
+# Module
+* factory method used to create service
+# Services
+* substitutable objects that can be wired together using dependency injection
+* can use services to organize and share code across app
+* Services have dependencies
+* Use calculatorService that is injected
+* add as second argument in controller app; inject second module into module instantiation. Can move calculations to service. Then in service file, you can define all these different functions that can then be called by the function; can help you extract out code that can then be used over and over in different functions.
+* Services can have their own dependencies
+## WHy use services:
+* Controllers instantiated only when eneded, discarded when not
+# Some services given to Angular.
+* $location: parses URL in browser address bar, sync when user changes address
+* $http: has example for syntax for it. documentation thorough
+* $route: mostly used for switching views based on different state of the app
+# Exercise
+* Instantiate app "category", has header, and then uses ng-repeat --- category data, dispaly the name
+* $.ajax versus $http: more modular, sometimes not have jquery because not dependency for Angular
+1) rake db:create db:migrate db:seed
